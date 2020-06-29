@@ -16,9 +16,17 @@ namespace std {
 		return c_str;
 	}
 
+    inline string to_string(string const& str) {
+        return str;
+    }
+
 	inline wstring to_wstring(wchar_t const* c_str) {
 		return c_str;
 	}
+
+    inline wstring to_wstring(wstring const& str) {
+        return str;
+    }
 }
 
 template<typename... arg_types>
